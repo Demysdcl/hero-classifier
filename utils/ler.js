@@ -4,10 +4,10 @@ const readlineInterface = readline.createInterface(
   process.stdout
 );
 
-function ask(questionText) {
+function ler(questionText) {
   return new Promise((resolve, reject) => {
-    readlineInterface.question(questionText, resolve);
+    readlineInterface.question(`${questionText}\n`, resolve);
   });
 }
 
-module.exports = ask;
+module.exports = ler;
